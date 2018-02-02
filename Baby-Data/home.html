@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Baby Names</title>
+  <link rel="stylesheet" href="theSheet.css" type="text/css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js" type="text/javascript"></script>
+  <script src="jquery.waypoints.js" type="text/javascript"></script>
+  </head>
+  <body>
+  	<div class="go-to-boys"></div>
+  	<div class="girl-dates-fixed">
+  			<div class="year-container" id="yc-1">
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year">1936</a>
+  				<a class="year">1937</a>
+  				<a class="year">1938</a>
+  				<a class="year">1939</a>
+  				<a class="year">1940</a>
+  				<a class="year">1941</a>
+  				<a class="year">1942</a>
+  				<a class="year">1943</a>
+  				<a class="year">1944</a>
+  				<a class="year">1945</a>
+  				<a class="year">1946</a>
+  				<a class="year">1947</a>
+  				<a class="year">1948</a>
+  				<a class="year">1949</a>
+  				<a class="year">1950</a>
+  				<a class="year">1951</a>
+  				<a class="year">1952</a>
+  				<a class="year">1953</a>
+  				<a class="year">1954</a>
+  				<a class="year">1955</a>
+  				<a class="year">1956</a>
+  				<a class="year">1957</a>
+  				<a class="year">1958</a>
+  				<a class="year">1959</a>
+  				<a class="year">1960</a>
+  				<a class="year">1961</a>
+  				<a class="year">1962</a>
+  				<a class="year">1963</a>
+  				<a class="year">1964</a>
+  				<a class="year">1965</a>
+  				<a class="year">1966</a>
+  				<a class="year">1967</a>
+  				<a class="year">1968</a>
+  				<a class="year">1969</a>
+  				<a class="year">1970</a>
+  				<a class="year">1971</a>
+  				<a class="year">1972</a>
+  				<a class="year">1973</a>
+  				<a class="year">1974</a>
+  				<a class="year">1975</a>
+  				<a class="year">1976</a>
+  				<a class="year">1977</a>
+  				<a class="year">1978</a>
+  				<a class="year">1979</a>
+  				<a class="year">1980</a>
+  				<a class="year">1981</a>
+  				<a class="year">1982</a>
+  				<a class="year">1983</a>
+  				<a class="year">1984</a>
+  				<a class="year">1985</a>
+  				<a class="year">1986</a>
+  				<a class="year">1987</a>
+  				<a class="year">1988</a>
+  				<a class="year">1989</a>
+  				<a class="year">1990</a>
+  				<a class="year">1991</a>
+  				<a class="year">1992</a>
+  				<a class="year">1993</a>
+  				<a class="year">1994</a>
+  				<a class="year">1995</a>
+  				<a class="year">1996</a>
+  				<a class="year">1997</a>
+  				<a class="year">1998</a>
+  				<a class="year">1999</a>
+  				<a class="year">2000</a>
+  				<a class="year">2001</a>
+  				<a class="year">2002</a>
+  				<a class="year">2003</a>
+  				<a class="year">2004</a>
+  				<a class="year">2005</a>
+  				<a class="year">2006</a>
+  				<a class="year">2007</a>
+  				<a class="year">2008</a>
+  				<a class="year">2009</a>
+  				<a class="year">2010</a>
+  				<a class="year">2011</a>
+  				<a class="year">2012</a>
+  				<a class="year">2013</a>
+  				<a class="year">2014</a>
+  				<a class="year">2015</a>
+  				<a class="year">2016</a>
+  			</div>
+  	</div>
+  	<div class="graph">
+  		<div class="name-container nc1">
+  			<div class="name-list-1">
+  				<p class="name">Mary</p>
+  			</div>
+  			<div class="name-list-1">
+  				<p class="name">Shirley</p>
+  			</div>
+  			<div class="name-list-1">
+  				<p class="name">Barbara</p>
+  			</div>
+  			<div class="name-list-1">
+  				<p class="name">Betty</p>
+  			</div>
+  			<div class="name-list-1">
+  				<p class="name">Patricia</p>
+  			</div>
+  			<div class="name-list-1">
+  				<p class="name">Dorothy</p>
+  			</div>
+  			<div class="name-list-1">
+  				<p class="name">Joan</p>
+  			</div>
+  			<div class="name-list-1">
+  				<p class="name">Nancy</p>
+  			</div>
+  			<div class="name-list-1">
+  				<p class="name">Margaret</p>
+  			</div>
+  			<div class="name-list-1">
+  				<p class="name">Carol</p>
+  			</div>
+  		</div>
+  		<div class="name-container nc2">
+  			<div class="name-list-1"></div>
+  			<div class="name-list-1"></div>
+  			<div class="name-list-1"></div>
+  			<div class="name-list-1"></div>
+  			<div class="name-list-1"></div>
+  			<div class="name-list-1"></div>
+  			<div class="name-list-1"></div>
+  			<div class="name-list-1"></div>
+  			<div class="name-list-1"></div>
+  			<div class="name-list-1"></div>
+  		</div>
+  	</div>
+  	<div class="hamburger">
+  		<div class="link-container">
+  			<a class="link-tab">My Github</a>
+  			<a class="link-tab">My Portfolio</a>
+  		</div>
+  		<span class="h-bar"></span>
+  		<span class="h-bar"></span>
+  		<span class="h-bar" id="hb3"></span>
+  	</div>
+  	<div class="fill"></div>
+  	<div class="data-page"></div>
+  	<div class="top-bar"></div>
+  	<div class="header">
+  		<span class="pink-bar"></span>
+  	</div>
+  	<div class="top-white">
+  		<p class="intro">
+		It’s hard to say, but thanks to the U.S Social Security<br/> 
+		Administration (SSA), we can trace the popularity of baby<br/>
+		names over the years and decades. A pertinent question<br/> 
+		to ask of this data is:  Do popular names even stay popular?<br/> Which names have been hot for years and 
+		which ones<br/> were just a passing fad?</p>
+  	</div>
+  	<div class="shadow-add"></div>
+  	<div class="wrap">
+	  	<div class="sec2">
+	  		<div class="babyNames-1">
+	  			<div class="bp-1">
+	  			<div class="small-header"></div>
+	  				<p class="p1">
+	  					The U.S government began<br/>
+						recording baby names at the<br/>
+						turn of the 20th century but<br/> 
+						the process was loosely ran<br/> 
+						and decentralized. Very few<br/> 
+						babies’ birth data and names<br/>
+						ended up in the hands of the<br/>
+						federal government until<br/> 
+						the year of 1936.</p>
+	  			</div>
+	  			<div class="bp-2">
+	  				<p class="p2">
+	  				It was in this year that the<br/>
+					SSA began recording the<br/> 
+					names assigned at birth as<br/> 
+					part of the larger goal of<br/>
+					establishing the system of<br/> 
+					Social Security. Without this<br/>
+					data the mission of tracking<br/> 
+					popular baby names would<br/> 
+					be very difficult.</p>
+	  			</div>
+	  		</div>
+	  		<div class="babyNames-2">
+	  			<span class="dark-line" id="w-line"></span>
+	  			<div class="bp-3">
+
+	  			</div>
+	  			<div class="bp-4">
+	  				<p class="p4">
+	  					Between 1936 and 2016,<br/> 
+						millions of baby names were<br/>
+						recorded, giving us a daunt-<br/>
+						ing amount of data to sift<br/> 
+						through, however with the<br/> 
+						help of the programming<br/> 
+						language R, the process was<br/> 
+						actually fairly smooth.</p>
+	  			</div>
+	  		</div>
+	  	</div>
+	</div>
+  	<div class="sec3">
+  		<div class="shadow-2"></div>
+  		<div class="babyNames-3">
+  			<span class="dark-line"></span>
+  			<div class="bp-5">
+  				<p class="p5">The results of my experi-<br/>mentation were really quite<br/> surprising. Some names<br/> rose and fell in groups, oth-<br/>ers bucked the trend. There<br/> were different behaviors of<br/> boys names versus girls.<br/> Take a look for yourself!</p>
+  			</div>
+  			<div class="bp-6"></div>
+  		</div>
+  		<div class="babyNames-4">
+  		<div class="small-header-2"></div>
+  			<p class="intro2">
+  			Once I had the data wrangled, it was time to choose<br/> how to organize the names. I decided to take the top<br/> 
+			10 baby names in 1936 and track their progression in the<br/> 
+			name popularity rankings all the way up to 2016. Then,<br/> 
+			I took the top 10 names in 2016 and tracked their popul-<br/>arity back in time to 1936. this was done for both boys and<br/> girls in separate visuals.</p>
+  		</div>
+  	</div>
+  	<div class="sec4" id="s4">
+  		<div class="the-girls">
+  		<div class="first-up"></div>
+  			<div class="graph-activate" id="ga-f"></div>
+  		</div>
+  		<!--<div class="girl-dates">
+  			<div class="year-container" id="yc-1">
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year"></a>
+  				<a class="year">1936</a>
+  				<a class="year">1937</a>
+  				<a class="year">1938</a>
+  				<a class="year">1939</a>
+  				<a class="year">1940</a>
+  				<a class="year">1941</a>
+  				<a class="year">1942</a>
+  				<a class="year">1943</a>
+  				<a class="year">1944</a>
+  				<a class="year">1945</a>
+  				<a class="year">1946</a>
+  				<a class="year">1947</a>
+  				<a class="year">1948</a>
+  				<a class="year">1949</a>
+  				<a class="year">1950</a>
+  				<a class="year">1951</a>
+  				<a class="year">1952</a>
+  				<a class="year">1953</a>
+  				<a class="year">1954</a>
+  				<a class="year">1955</a>
+  				<a class="year">1956</a>
+  				<a class="year">1957</a>
+  				<a class="year">1958</a>
+  				<a class="year">1959</a>
+  				<a class="year">1960</a>
+  				<a class="year">1961</a>
+  				<a class="year">1962</a>
+  				<a class="year">1963</a>
+  				<a class="year">1964</a>
+  				<a class="year">1965</a>
+  				<a class="year">1966</a>
+  				<a class="year">1967</a>
+  				<a class="year">1968</a>
+  				<a class="year">1969</a>
+  				<a class="year">1970</a>
+  				<a class="year">1971</a>
+  				<a class="year">1972</a>
+  				<a class="year">1973</a>
+  				<a class="year">1974</a>
+  				<a class="year">1975</a>
+  				<a class="year">1976</a>
+  				<a class="year">1977</a>
+  				<a class="year">1978</a>
+  				<a class="year">1979</a>
+  				<a class="year">1980</a>
+  				<a class="year">1981</a>
+  				<a class="year">1982</a>
+  				<a class="year">1983</a>
+  				<a class="year">1984</a>
+  				<a class="year">1985</a>
+  				<a class="year">1986</a>
+  				<a class="year">1987</a>
+  				<a class="year">1988</a>
+  				<a class="year">1989</a>
+  				<a class="year">1990</a>
+  				<a class="year">1991</a>
+  				<a class="year">1992</a>
+  				<a class="year">1993</a>
+  				<a class="year">1994</a>
+  				<a class="year">1995</a>
+  				<a class="year">1996</a>
+  				<a class="year">1997</a>
+  				<a class="year">1998</a>
+  				<a class="year">1999</a>
+  				<a class="year">2000</a>
+  				<a class="year">2001</a>
+  				<a class="year">2002</a>
+  				<a class="year">2003</a>
+  				<a class="year">2004</a>
+  				<a class="year">2005</a>
+  				<a class="year">2006</a>
+  				<a class="year">2007</a>
+  				<a class="year">2008</a>
+  				<a class="year">2009</a>
+  				<a class="year">2010</a>
+  				<a class="year">2011</a>
+  				<a class="year">2012</a>
+  				<a class="year">2013</a>
+  				<a class="year">2014</a>
+  				<a class="year">2015</a>
+  				<a class="year">2016</a>
+  			</div>
+  		</div>-->
+  	</div>
+  	<div class="long"></div>
+  	<script src="theScript.js" type="text/javascript"></script>
+  </body>
+</html>

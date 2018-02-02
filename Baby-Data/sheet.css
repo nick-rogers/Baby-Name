@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+
+html {
+	font-size: 22px;
+}
+
+body {
+	margin: 0;
+	background-color: white;
+	height: 2500px;
+}
+
+.fill {
+	position: absolute;
+	width: 100%;
+	height: 2000px;
+	background-image: url(baby-back.png);
+	background-size: 100% 100%;
+	opacity: 0.6;
+	z-index: 1000;
+	display: none;
+}
+
+.header {
+	position: absolute;
+	width: 95%;
+	height: 0;
+	padding-bottom: 45%;
+	background-image: url(what-makes-name2.png);
+	background-size: 105% 100%;
+	opacity: 1;
+	z-index: 100;
+	margin-left: 2.5%;
+	margin-top: 110px;
+}
+
+.top-bar {
+	width: 0%;
+	height: 10px;
+	background-color: #2d2d2d;
+	position: fixed;
+	z-index: 4000;
+	transition: all ease-in 0.8s;
+}
+
+.pink-bar {
+	display: block;
+	width: 37.5%;
+	height: 4px;
+	background-color: #fa8ac6;
+	margin-top: 33%;
+	margin-left: 4.4%;
+	box-shadow: 5px 5px 5px #e7e7e7;
+}
+
+.top-white {
+	position: absolute;
+	width: 100%;
+	height: 0;
+	padding-bottom: 101%;
+	background-color: white;
+	clip-path: polygon(0% 81%,100% 75%,100% 0%,0% 0%);
+	z-index: 51;
+}
+
+.shadow-add {
+	position: absolute;
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+	background-image: url(shadow-add.png);
+	background-size: 100% 30%;
+	margin-top: 59%;
+	background-repeat: no-repeat;
+	z-index: 50;
+	opacity: 0.5;
+}
+
+.wrap {
+	z-index: 30;
+}
+
+.sec2 {
+	width: 100%;
+	height: 210vw;
+	background-color: #8cd7fb;
+	clip-path: polygon(0% 96%,100% 100%,100% 0%,0% 0%);
+	z-index: 30;
+}
+
+.sec3 {
+	width: 100%;
+	height: 110vw;
+	background-color: white;
+	z-index: 15;
+	margin-top: -10%;
+}
+
+.sec4 {
+	width: 100%;
+	height: 88vw;
+	background-color: #fa8ac6;
+	z-index: 80;
+	background-color: blue;
+	margin-top: 22vw;
+}
+
+
+.hamburger {
+	display: block;
+	position: absolute;
+	right: 0;
+	width: 33px;
+	height: 25px;
+	z-index: 70;
+	margin-right: 4.3%;
+	margin-top: 75px;
+	cursor: pointer;
+}
+
+.h-bar {
+	display: block;
+	float: left;
+	width: 100%;
+	height: 4px;
+	background-color: #8cd7fb;
+	margin-bottom: 6px;
+}
+
+#hb3 {
+	width: 70%;
+	float: right;
+	transition: all ease-in-out 0.2s;
+}
+
+.intro {
+	display: block;
+	margin-top: 50vw;
+	margin-left: 20%;
+	font-family: 'Lato', sans-serif;
+	color: #6e6e6e;
+	font-size: 1rem;
+	line-height: 29px;
+}
+
+.intro2 {
+	display: block;
+	margin-top: 15.5vw;
+	margin-left: 19%;
+	font-family: 'Lato', sans-serif;
+	color: #8a8c8e;
+	font-size: 1rem;
+	line-height: 29px;
+}
+
+.babyNames-1, .babyNames-2, .babyNames-3, .babyNames-4 {
+	width: 100%;
+	height: 0;
+	padding-bottom: 35%;
+	z-index: 3000;
+}
+
+.babyNames-1 {
+	position: absolute;
+	margin-top: 110%;
+}
+
+.babyNames-2 {
+	position: absolute;
+	margin-top: 152%;
+}
+
+.babyNames-3 {
+	position: absolute;
+	margin-top: 50%;
+}
+
+.babyNames-4 {
+	position: absolute;
+	margin-top: 5%;
+	/*background-color: red;*/
+}
+
+.bp-1, .bp-2, .bp-3, .bp-4, .bp-5, .bp-6 {
+	display: block;
+	width: 50%;
+	padding-bottom: inherit;
+	float: left;
+}
+
+.bp-1, .bp-3 {
+	/*background-color: orange;*/
+}
+.bp-3 {
+	background-color: black;
+}
+
+.bp-2, .bp-4 {
+	/*background-color: white;*/
+}
+
+.bp-6 {
+	background-color: lightblue;
+}
+
+.p1, .p2, .p3, .p4, .p5 {
+	display: block;
+	font-size: 1rem;
+	font-family: 'Lato', sans-serif;
+	line-height: 29px;
+	color: white;
+}
+
+.p1, .p3, .p5 {
+	margin-left: 38%;
+	margin-top: 100px;
+}
+
+.p2, .p4 {
+	margin-left: 16%;
+	margin-top: 100px;
+}
+
+.p5 {
+	color: #8a8c8e;
+}
+
+.data-page {
+	position: absolute;
+	width: 100%;
+	height: 2300px;
+	background-image: url(data-Page.png);
+	background-size: 100% 100%;
+	opacity: 0.4;
+	z-index: 5000;
+	margin-top: 2050px;
+	display: none;
+}
+
+.dark-line {
+	position: absolute;
+	display: block;
+	width: 31.6rem;
+	height: 3px;
+	background-color: #aaadaf;
+	margin-left: 18.7vw;
+}
+
+#w-line {
+	background-color: white;
+}
+
+.the-girls {
+	position: absolute;
+	width: 100%;
+	height: 150px;
+	background-color: black;
+}
+
+.shadow-2 {
+	width: 100%;
+	height: 0;
+	padding-bottom: 35%;
+	background-color: white;
+	background-image: url(shadow-add2.png);
+	background-size: 100% 100%;
+	margin-top: -28.5%;
+}
+
+.girl-dates {
+	width: 100%;
+	height: 120px;
+	background-color: white;
+	display: inline-block;
+	margin-top: 78vw;
+	text-align: center;
+}
+
+.year-container {
+	width: 900px;
+	height: 50px;
+	display: inline-block;
+	/*background-color: darkgrey;*/
+	margin-top: 10px;
+}
+
+.year {
+	display: inline-block;
+	width: 3.481px;
+	height: 50px;
+	float: left;
+	font-size: 0px;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	color: #fa8ac6;
+	transition: all ease-in 0.2s;
+}
+
+.year:nth-of-type(80){
+	font-size: 20px;
+	width: 100px;
+	font-weight: 900;
+	opacity: 0.7;
+	text-align: right;
+	text-indent: 75px;
+}
+
+.year:nth-of-type(81){
+	font-size: 25px;
+	z-index: 100;
+	overflow-x: visible;
+	text-overflow: string;
+	width: 150px;
+	font-weight: 900;
+	font-size: 1.7rem;
+	line-height: 35px;
+}
+
+.year:nth-of-type(82){
+	font-size: 20px;
+	width: 100px;
+	font-weight: 900;
+	opacity: 0.7;
+	text-align: left;
+	text-indent: -20px;
+}
+
+.removeButton {
+	display: block;
+	width: 75px;
+	height: 50px;
+	background-color: blue;
+	cursor: pointer;
+}
+
+.addButton {
+	display: block;
+	width: 75px;
+	height: 50px;
+	background-color: yellow;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/**/
