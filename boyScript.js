@@ -1,50 +1,13 @@
 $(document).ready(function(){
 
-	//console.log($(window).scrollTop());
-	//var scrollTop = $(window).scrollTop(),
-    //elementOffset = $('#my-element').offset().top,
-    //distance      = (elementOffset - scrollTop);
+
 
     var startIt = true;
-
-
-
-	/*var waypoint = new Waypoint({
-	  element: document.getElementById('ga-f'),
-	  handler: function() {
-
-	  	if(femaleActive == true){
-	  		$('.long').css('display','none');
-	  		//$('.girl-dates-fixed').css('display','none');
-	  		$('.girl-dates-fixed').fadeOut(400);
-	  		$('.graph').fadeOut(400);
-	  		femaleActive = false;
-	  		counter = 0;
-	  		startIt = false;
-	  		console.log(femaleActive);
-	  	}
-	  	else {
-	  		$('.long').css('display','block');
-	  		//$('.girl-dates-fixed').css('display','block');
-	  		$('.girl-dates-fixed').fadeIn(400);
-	  		$('.graph').fadeIn(400);
-	  		femaleActive = true;
-	  		topDist = $(window).scrollTop();
-	  		console.log(topDist);
-	  		startIt = true;
-	  		counter = 0;
-	  	}
-	  	console.log('HIT');
-	  	$('.go-to-boys').fadeOut(400);
- 	 	}
-	});*/
 
 // Move Forward in the time sheet
 
 function moveForwardYear(){
-	
-		console.log('counter: ' + counter + ' move forward');
-		//counter = counter-1;
+
 		$('.go-to-boys').fadeIn(400);
 		if(counter == 0){
 			$('#y1').text("1936");
@@ -153,7 +116,7 @@ function moveBackYear(){
 								counter = counter+1;
 							}
 							moveForwardYear();
-							console.log('counter '+ counter);
+					
 						}
 						else if((addedScroll+100) < increment) {
 							increment = increment - 10;
@@ -164,8 +127,7 @@ function moveBackYear(){
 								counter = counter-1;
 							}
 							moveBackYear();
-							console.log('counter '+ counter);
-							console.log('Added ' + addedScroll);
+	
 						}
 
 					drawLines(counter);
@@ -310,20 +272,6 @@ $('.name-list-1').mouseover(function(){
 	$(this).addClass('name-list-1');
 	$(this).removeClass('name-list-1-hover');
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 });

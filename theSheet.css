@@ -91,7 +91,7 @@ body {
 
 .sec3 {
 	width: inherit;
-	height: 1300px;
+	height: 1100px;
 	background-color: white;
 	z-index: 15;
 	margin-top: -10%;
@@ -200,12 +200,12 @@ body {
 
 .babyNames-3 {
 	position: absolute;
-	margin-top: 520px;
+	margin-top: 750px;
 }
 
 .babyNames-4 {
 	position: absolute;
-	margin-top: 30px;
+	margin-top: 250px;
 	/*background-color: red;*/
 }
 
@@ -587,7 +587,7 @@ body {
 .illustration-1 {
 	width: 450px;
 	height: 450px;
-	background-image: url(illustration-1.png);
+	background-image: url(illustration-1-v2.png);
 	background-size: 100% 100%;
 	margin-left: 180px;
 }
