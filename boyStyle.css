@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+
+html {
+	font-size: 22px;
+}
+
+body {
+	width: 1366px;
+	margin: 0;
+	background-color: white;
+	overflow-x: hidden;
+}
+
+.top-bar {
+	width: 100%;
+	height: 10px;
+	background-color: #2d2d2d;
+	position: fixed;
+	z-index: 4000;
+	transition: all ease-in 0.8s;
+}
+
+.long {
+	width: inherit;
+	height: 5800px;
+	background-color: #8cd7fb;
+}
+
+.final-sec {
+	position: absolute;
+	width: inherit;
+	height: 2000px;
+	background-color: white;
+	z-index: 6000;
+}
+
+.graph {
+	position: fixed;
+	width: 800px;
+	height: 444.44px;
+	margin-top: 200px;
+	margin-left: 185px;
+}
+
+.name-container {
+	position: absolute;
+	display: block;
+	width: 130px;
+	height: 243px;
+	z-index: 5500;
+}
+
+.nc1 {
+	margin-left: -130px;
+	margin-top: -17px;
+}
+
+.nc2 {
+	margin-left:790px;
+	margin-top: -17px;
+}
+
+.name-list-1 {
+	display: block;
+	width: 130px;
+	height: 22.5px;
+	float: left;
+	background-color: #ebf6fe;
+	margin-bottom: 2px;
+}
+
+.name-list-1-hover {
+	display: block;
+	width: 130px;
+	height: 22.5px;
+	float: left;
+	background-color: #2d2d2d;
+	margin-bottom: 2px;
+}
+
+.name-list-1-hover p {
+	color: white;
+}
+
+
+
+.name-list-1:nth-of-type(odd){
+	background-color: white;
+}
+
+.name {
+	position: absolute;
+	display: block;
+	float: left;
+	width: 85px;
+	height: 22.5px;
+	margin-top: 0px;
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	text-indent: 5px;
+	color: #2d2d2d;
+	pointer-events: none;
+}
+
+.nm2 {
+	float: right;
+	margin-left: 38px;
+	text-align: right;
+}
+
+.rank {
+	position: absolute;
+	width: 45px;
+	height: 22.5px;
+	display: block;
+	margin-bottom: 2px;
+	float: right;
+	margin-top: 0px;
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	color: #2d2d2d;
+	margin-left: 90px;
+	text-align: center;
+}
+
+.r2 {
+	margin-left: -2px;
+}
+
+.name-rank {
+	position: absolute;
+	display: block;
+	width: 130px;
+	height: 35px;
+	background-image: url(name-rank.png);
+	background-size: 100% 100%;
+	margin-top: -35px;
+}
+
+
+
+.boy-dates-fixed {
+	display: block;
+	position: fixed;
+	width: inherit;
+	height: 100px;
+	background-color: white;
+	text-align: center;
+	z-index: 2000;
+	bottom: 0;
+}
+
+.inner-year {
+	position: absolute;
+	display:block;
+	width: 300px;
+	height: 50px;
+	margin-left: 300px;
+}
+
+.year {
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	float: left;
+	font-size: 0px;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	color: #8cd7fb;
+}
+
+#y1 {
+	font-size: 20px;
+	width: 75px;
+	font-weight: 900;
+	opacity: 0.7;
+	text-align: right;
+	text-indent: 50px;
+}
+
+#y2 {
+	font-size: 25px;
+	z-index: 100;
+	overflow-x: visible;
+	text-overflow: string;
+	width: 150px;
+	font-weight: 900;
+	font-size: 1.7rem;
+	line-height: 35px;
+}
+
+#y3 {
+	font-size: 20px;
+	width: 75px;
+	font-weight: 900;
+	opacity: 0.7;
+	text-align: left;
+	text-indent: -20px;
+}
+
+.year-container {
+	width: 900px;
+	height: 50px;
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: -200px;
+}
+
+.year:nth-of-type(80){
+	font-size: 20px;
+	width: 100px;
+	font-weight: 900;
+	opacity: 0.7;
+	text-align: right;
+	text-indent: 75px;
+}
+
+.year:nth-of-type(81){
+	font-size: 25px;
+	z-index: 100;
+	overflow-x: visible;
+	text-overflow: string;
+	width: 150px;
+	font-weight: 900;
+	font-size: 1.7rem;
+	line-height: 35px;
+}
+
+.year:nth-of-type(82){
+	font-size: 20px;
+	width: 100px;
+	font-weight: 900;
+	opacity: 0.7;
+	text-align: left;
+	text-indent: -20px;
+}
+
+.babyNames-5, .babyNames-6 {
+	width: 1366px;
+	height: 0;
+	padding-bottom: 300px;
+	z-index: 3000;
+}
+
+.babyNames-5 {
+	margin-top: 300px;
+}
+
+.babyNames-6 {
+}
+
+.outro {
+	display: block;
+	margin-left: 19%;
+	font-family: 'Lato', sans-serif;
+	color: #6e6e6e;
+	font-size: 1rem;
+	line-height: 29px;
+}
+
+.bp-1, .bp-2 {
+	display: block;
+	width: 50%;
+	padding-bottom: inherit;
+	float: left;
+	margin-top: 100px;
+}
+
+.p1, .p2 {
+	display: block;
+	font-size: 1rem;
+	font-family: 'Lato', sans-serif;
+	line-height: 29px;
+	color: grey;
+}
+
+.p1 {
+	margin-left: 38%;
+}
+
+.dark-line {
+	position: absolute;
+	display: block;
+	width: 31.6rem;
+	height: 3px;
+	background-color: #aaadaf;
+	margin-left: 18.7vw;
+}
+
+.small-header {
+	display: block;
+	position: absolute;
+	width: 300px;
+	height: 72px;
+	margin-left: 240px;
+	margin-top: -90px;
+	background-image: url(findings.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.william-nicholas {
+	display: block;
+	width: 800px;
+	height: 380px;
+	background-image: url(william-nicholas.png);
+	background-size: 100% 100%;
+	margin-left: 200px;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+
+.closing {
+	width: 100%;
+	height: 400px;
+	background-color: #fa8ac6;
+	display: block;
+	z-index: 7000;
+	margin-top: 300px;
+	clip-path: polygon(0% 100%,100% 100%,100% 15%,0% 0%);
+}
+

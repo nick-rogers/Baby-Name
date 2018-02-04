@@ -5,33 +5,11 @@ $(document).ready(function(){
     //elementOffset = $('#my-element').offset().top,
     //distance      = (elementOffset - scrollTop);
 
+    var startIt = true;
 
 
-    var topDist = 0;
-    var startIt = false;
-    var isExtend = false;
 
-	$('.top-bar').css('width', '100%');
-	$('.hamburger').mouseover(function(){
-		$('#hb3').css('width', '100%');
-	}).mouseout(function(){
-		$('#hb3').css('width', '70%');
-	});
-
-	$('.hamburger').click(function(){
-		if(isExtend == false){
-			$('.link-container').css('display', 'block');
-			isExtend = true;
-		}
-		else {
-			$('.link-container').css('display', 'none');
-			isExtend = false;
-		}
-    });
-
-	var femaleActive = false;
-
-	var waypoint = new Waypoint({
+	/*var waypoint = new Waypoint({
 	  element: document.getElementById('ga-f'),
 	  handler: function() {
 
@@ -55,14 +33,11 @@ $(document).ready(function(){
 	  		console.log(topDist);
 	  		startIt = true;
 	  		counter = 0;
-	  		$('.name-container').fadeOut(400);
 	  	}
 	  	console.log('HIT');
 	  	$('.go-to-boys').fadeOut(400);
-	  	$('.nc1').fadeIn(400);
-	  	$('.nc2').fadeIn(400);
  	 	}
-	});
+	});*/
 
 // Move Forward in the time sheet
 
@@ -70,9 +45,7 @@ function moveForwardYear(){
 	
 		console.log('counter: ' + counter + ' move forward');
 		//counter = counter-1;
-		if(counter > 80){
-			$('.go-to-boys').fadeIn(400);
-		}
+		$('.go-to-boys').fadeIn(400);
 		if(counter == 0){
 			$('#y1').text("1936");
 			$('#y2').text("1937");
@@ -94,8 +67,7 @@ function moveBackYear(){
 }
 
 
-// CODE BELOW IS FOR THE FEMALE GRAPH
-
+// CODE BELOW IS FOR THE MALE GRAPH
 
 	// Data from which all the naming data is drawn
 
@@ -108,34 +80,6 @@ function moveBackYear(){
 
 	var men1936 = $.csv.toArray(m1936);
 	var men2016 = $.csv.toArray(m2016);
-	var women1936 = $.csv.toArray(w1936);
-	var women2016 = $.csv.toArray(w2016);
-
-	// Womens' 1936 names listed below
-
-	var mary = women1936.slice(5, 329);
-	var shirley = women1936.slice(329, 653);
-	var barbara = women1936.slice(653, 977);
-	var betty = women1936.slice(977, 1301);
-	var patricia = women1936.slice(1301, 1625);
-	var dorothy = women1936.slice(1625, 1949);
-	var joan = women1936.slice(1949, 2273);
-	var nancy = women1936.slice(2273, 2597);
-	var margaret = women1936.slice(2597, 2921);
-	var carol = women1936.slice(2921, 3245);
-
-	// Womens' 2016 names listed below
-
-	var emma = women2016.slice(5, 329);
-	var olivia = women2016.slice(329, 653);
-	var ava = women2016.slice(653, 977);
-	var sophia = women2016.slice(977, 1301);
-	var isabella = women2016.slice(1301, 1625);
-	var mia = women2016.slice(1625, 1949);
-	var charlotte = women2016.slice(1949, 2273);
-	var abigail = women2016.slice(2273, 2597);
-	var emily = women2016.slice(2597, 2921);
-	var harper = women2016.slice(2921, 3245);
 
 	// Men's 1936 names 
 
@@ -164,24 +108,19 @@ function moveBackYear(){
 	var elijah = men2016.slice(2597, 2921);
 	var ethan = men2016.slice(2921, 3245);
 
-	// An array to access all female names in 1936 and 2016
-
-	var fNames = [mary, shirley, barbara, betty, patricia, dorothy, joan, nancy, margaret, carol, emma, olivia, ava, sophia, isabella, mia, charlotte, abigail, emily, harper];
-
-	var stringNamesf = ['mary', 'shirley', 'barbara', 'betty', 'patricia', 'dorothy', 'joan', 'nancy', 'margaret', 'carol', 'emma', 'olivia', 'ava', 'sophia', 'isabella', 'mia', 'charlotte', 'abigail', 'emily', 'harper'];
 	// An array to access all male names in 1936 and 2016 (Unique names only)
 
-	var mNames = [robert, james, john, william, richard, charles, donald, thomas, george, david, noah, liam, mason, benjamin, jacob, michael, elijah, ethan];
+	var mNames = [robert, james, john, william, richard, charles, donald, thomas, george, david, noah, liam, william, mason, james, benjamin, jacob, michael, elijah, ethan];
 
+	var stringNamesM = ['robert', 'james', 'john', 'william', 'richard', 'charles', 'donald', 'thomas', 'george', 'david', 'noah', 'liam', 'william', 'mason', 'james', 'benjamin', 'jacob', 'michael', 'elijah', 'ethan'];
 
 	var years = [" ", " ", "1936", "1937", "1938", "1939", "1940", "1941", "1942", "1943", "1944", "1945", "1946", "1947", "1948", "1949", "1950", "1951", "1952", "1953", "1954", "1955", "1956", "1957", "1958", "1959", "1960", "1961", "1962", "1963", "1964", "1965", "1966", "1967", "1968", "1969", "1970", "1971", "1972", "1973", "1974", "1975", "1976", "1977", "1978", "1979", "1980", "1981", "1982", "1983", "1984", "1985", "1986", "1987", "1988", "1989", "1990", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", " ", " "];
 
-	var idNames = ["#r01", "#r02", "#r03", "#r04", "#r05", "#r06", "#r07", "#r08", "#r09", "#r10", "#r11", "#r12", "#r13", "#r14", "#r15", "#r16", "#r17", "#r18", "#r19", "#r20"];
+    var idNames = ["#r01", "#r02", "#r03", "#r04", "#r05", "#r06", "#r07", "#r08", "#r09", "#r10", "#r11", "#r12", "#r13", "#r14", "#r15", "#r16", "#r17", "#r18", "#r19", "#r20"];
 // Code Below records scroll distances and draws line graph accordingly by calling drawLines()
 
+    var topDist = 0;
 
-
-		//var counter = 0;
 		var addedScroll = 0;
 
 
@@ -189,9 +128,16 @@ function moveBackYear(){
 			var increment = 20;
 
 			$(document).scroll(function() {
+
 				if(startIt){
-					if(counter < 83 && counter >= 0){
+					if(counter < 82 && counter >= 0){
 						addedScroll = $(document).scrollTop() - topDist;
+						if($(document).scrollTop() == 0){
+							counter = 0;
+							$("#y1").text('');
+							$("#y2").text('');
+							$("#y3").text('');
+						}
 						//console.log('EXTRA ' + addedScroll + ' and addedScroll: ' + addedScroll);
 						if(addedScroll > increment){
 							if(counter == 0){
@@ -210,7 +156,7 @@ function moveBackYear(){
 							console.log('counter '+ counter);
 						}
 						else if((addedScroll+100) < increment) {
-							increment = increment - 20;
+							increment = increment - 10;
 							if(counter == 0){
 								counter = 0;
 							}
@@ -219,6 +165,7 @@ function moveBackYear(){
 							}
 							moveBackYear();
 							console.log('counter '+ counter);
+							console.log('Added ' + addedScroll);
 						}
 
 					drawLines(counter);
@@ -252,10 +199,13 @@ function moveBackYear(){
 		// Drawing only one person 
 		var enumerator = -1;
 
-		for(var i = 0; i < fNames.length; i++){
+		for(var i = 0; i < mNames.length; i++){
 			enumerator = enumerator+1;
-			var className = stringNamesf[i];
-			drawPerson(fNames[i]);
+			var className = stringNamesM[i];
+			if(i == 12 || i == 14){
+				className = className+'1';
+			}
+			drawPerson(mNames[i]);
 
 			//$('#eraseLine').attr('stroke', '0');
 		}
@@ -272,17 +222,16 @@ function moveBackYear(){
 			for(var x = 0; x <= num; x++){
 					idCounter = idCounter+1;
 					var select = (4*x)+2;
-					var entry = [(9.877*x), scale(fNames[enumerator][select])];
-					rank = fNames[enumerator][select];
+					var entry = [(9.877*x), scale(mNames[enumerator][select])];
+					rank = mNames[enumerator][select];
 					var printRank = rank;
 					if(rank == 0){
 						console.log('detected');
 						printRank = "<250";
 					}
 					$(idNames[enumerator]).text(printRank);
-				
 
-					if((fNames[enumerator][select]) > 25 || (fNames[enumerator][select]) == 0){
+					if((mNames[enumerator][select]) > 25 || (mNames[enumerator][select]) == 0){
 						entry = [(9.877*x), scale(25)];
 					}
 					data[x] = entry;
@@ -326,58 +275,40 @@ function moveBackYear(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*var yearArray = [];
-
-var counted = 0; 
-
-for(var i = 0; i < 83; i++){
-	if(i == 0){
-		yearArray[i] = " ";
-	}
-	else if(i == 82){
-		yearArray[i] = " ";
-	}
-	else {
-		var number = 1935+i;
-		yearArray[i] = number.toString();
-	}
-}*/
-
-
-
 $('.name-list-1').mouseover(function(){
 	var thisId = $(this).attr('id');
-	thisId = "."+thisId;
-	console.log(thisId);
-	d3.select(thisId).attr('stroke', '#2d2d2d');
+	if(thisId == 'william' || thisId == 'william2'){
+		d3.select('.william').attr('stroke', '#2d2d2d');
+		d3.select('.william1').attr('stroke', '#2d2d2d');
+	}
+	else if(thisId == 'james' || thisId == 'james2'){
+		d3.select('.james').attr('stroke', '#2d2d2d');
+		d3.select('.james1').attr('stroke', '#2d2d2d');
+	}
+	else {
+		thisId = "."+thisId;
+		console.log(thisId);
+		d3.select(thisId).attr('stroke', '#2d2d2d');
+	}
 	$(this).addClass('name-list-1-hover');
 	$(this).removeClass('name-list-1');
 
 }).mouseout(function(){
 	var thisId = $(this).attr('id');
-	thisId = "."+thisId;
+	if(thisId == 'william' || thisId == 'william2'){
+		d3.select('.william').attr('stroke', 'white');
+		d3.select('.william1').attr('stroke', 'white');
+	}
+	else if(thisId == 'james' || thisId == 'james2'){
+		d3.select('.james').attr('stroke', 'white');
+		d3.select('.james1').attr('stroke', 'white');
+	}
+	else {
+		thisId = "."+thisId;
+		d3.select(thisId).attr('stroke', 'white');
+	}
 	$(this).addClass('name-list-1');
 	$(this).removeClass('name-list-1-hover');
-	d3.select(thisId).attr('stroke', 'white');
 });
 
 
@@ -391,5 +322,8 @@ $('.name-list-1').mouseover(function(){
 
 
 
-});
 
+
+
+
+});
