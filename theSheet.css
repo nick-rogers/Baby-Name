@@ -308,10 +308,10 @@ body {
 	display: none;
 	position: fixed;
 	width: inherit;
-	height: 100px;
+	height: 130px;
 	background-color: white;
 	text-align: center;
-	z-index: 2000;
+	z-index: 10500;
 	bottom: 0;
 }
 
@@ -397,7 +397,7 @@ body {
 	width: inherit;
 	display: block;
 	height: 50px;
-	margin-top: 150px;
+	margin-top: 110px;
 }
 
 .long {
